@@ -15,6 +15,9 @@ import java.util.concurrent.TimeUnit;
 import static com.hmdp.utils.RedisConstants.LOGIN_USER_KEY;
 import static com.hmdp.utils.RedisConstants.LOGIN_USER_TTL;
 
+/**
+ * 状态刷新拦截器
+ */
 public class RefreshTokenInterceptor implements HandlerInterceptor {
 
     //由于这个类是自定义的，非spring注解构建，所以不能使用spring依赖注入，可以使用构造器注入，也可以加上注解@component等

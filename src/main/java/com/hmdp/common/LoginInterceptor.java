@@ -17,6 +17,9 @@ import java.util.Map;
 
 import static com.hmdp.utils.RedisConstants.LOGIN_USER_KEY;
 
+/**
+ * 登入校验拦截器
+ */
 public class LoginInterceptor implements HandlerInterceptor {
 
     //由于这个类是自定义的，非spring注解构建，所以不能使用spring依赖注入，可以使用构造器注入，也可以加上注解@component等
